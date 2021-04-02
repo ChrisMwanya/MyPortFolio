@@ -1,0 +1,117 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 900;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #00204F;
+}
+.header__nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.header__menu-line {
+  display: flex;
+  flex-direction: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.header a {
+  text-decoration: none !important;
+  color: #FFAF0F !important;
+}
+.header__title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../../img/fond.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__title {
+  font-size: 7rem !important;
+  color: #C2DAFF !important;
+  text-transform: uppercase !important;
+  text-shadow: #FFFFFF !important;
+}
+.header__description {
+  font-size: 3rem !important;
+}
+
+.menu-bar {
+  display: none !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .menu-bar {
+    display: block !important;
+  }
+}
+.logo {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+.border {
+  border: 1px;
+}
+.border__circle {
+  border-radius: 100%;
+}
+
+.text {
+  color: #FFFFFF;
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.7rem;
+}
+
+.button {
+  background: none;
+  border-radius: 25px;
+  padding: 20px;
+  border: 1px solid #FFAF0F;
+  color: #FFAF0F;
+}
+.button__huge {
+  width: 15%;
+}
+
+/*# sourceMappingURL=style.css.map */

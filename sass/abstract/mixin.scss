@@ -1,0 +1,34 @@
+@mixin  flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-set($flex-direction,$justify-content,$align-items) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin background-set($image,$opacity){
+    background: url($image) no-repeat;   
+    background-size: cover; 
+    opacity: $opacity;
+}
+
+@mixin background-color-set($color,$opacity){
+    background-color: $color!important;
+    opacity: $opacity;
+}
+
+@mixin padding-set($left,$right,$top,$bottom){
+    padding-left:$left ;
+    padding-right:$right ;
+    padding-top:$top ;
+    padding-bottom:$bottom ;
+}
+
+@mixin color-set($color){
+    color:$color;
+}
