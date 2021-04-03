@@ -21,7 +21,7 @@
     }
     &__title-container{
         @include flex-set(column,space-between,center);
-        background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6) ), url("../../img/fond.jpg");
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) ), url("../../img/fondwebdevelopper.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

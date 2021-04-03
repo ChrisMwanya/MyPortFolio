@@ -16,8 +16,10 @@ html {
   font-weight: normal;
 }
 
-a {
+a, button {
   text-decoration: none;
+  font-size: 2rem;
+  font-family: sans-serif;
 }
 
 li {
@@ -52,14 +54,14 @@ h1, h2, h3, h4 {
 }
 .header a {
   text-decoration: none !important;
-  color: #FFAF0F !important;
+  color: #FFEBC2 !important;
 }
 .header__title-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("../../img/fond.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/fondwebdevelopper.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -87,14 +89,18 @@ h1, h2, h3, h4 {
   display: block;
   width: 70px;
   height: 70px;
-  border-radius: 100%;
 }
 
 .border {
   border: 1px;
 }
-.border__circle {
+.border--circle {
   border-radius: 100%;
+}
+.border--white {
+  border-style: solid;
+  border-color: #C2DAFF;
+  border-width: 9px;
 }
 
 .text {
@@ -107,11 +113,19 @@ h1, h2, h3, h4 {
   background: none;
   border-radius: 25px;
   padding: 20px;
-  border: 1px solid #FFAF0F;
-  color: #FFAF0F;
+  border: 3px solid #FFFFFF;
+  color: #FFFFFF;
 }
 .button__huge {
   width: 15%;
+}
+
+.image {
+  display: inline-block;
+}
+.image--carre-small {
+  width: 12%;
+  height: 12%;
 }
 
 /*# sourceMappingURL=style.css.map */
