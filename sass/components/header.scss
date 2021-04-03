@@ -2,12 +2,16 @@
 {
     @include flex-set(row,space-between,center);    
     padding: 20px;
-    background-color: $color-fond;
+    position:sticky;
+    top: 0;
+    width: 100%;
+    background-color: $color-fond; 
+    
     
     &__nav-container{
-        @include flex-set(row,space-between,center); 
-        
+        @include flex-set(row,space-between,center);         
         width: 100%;
+        background-color: $color-fond; 
     }
 
     &__menu-line{

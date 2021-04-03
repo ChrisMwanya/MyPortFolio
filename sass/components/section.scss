@@ -1,0 +1,61 @@
+.section
+{
+    width: 100%;
+    padding: 20px;
+
+    &--column-right{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start
+    }
+
+    &--column-centered{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &--column-left{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+    }
+
+
+    &--row-right{
+        display: flex;        
+        align-items:flex-start
+    }
+
+    &--column-centered{
+        display: flex;        
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &--column-left{
+        display: flex;        
+        align-items:flex-end;
+    }
+
+    &--background-image{
+        // background-image: linear-gradient(rgba(1,1,1,0.7),rgba(0,0,0,0.1)),url("./../../img/fonddevelopper.svg");
+        // background-repeat: no-repeat;
+        // background-size: contain;
+        // background-position: center;
+        background-color: $color-underline;
+    }
+
+    &__title
+    {
+        text-align: center;
+        font-size: 3rem;
+        width: 100%;
+        // &__background
+        // {
+        //     background-color: rgba($color: $color-fond, $alpha: 0.7);
+        // }
+    }
+
+}

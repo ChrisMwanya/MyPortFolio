@@ -4,8 +4,14 @@
     padding: 20px;
     border: 3px solid $color-white;
     color: $color-white;
+    cursor: pointer;
+
+    &:hover{
+        
+    }
 
     &__huge{
         width: 15%;
     }
+
 }
