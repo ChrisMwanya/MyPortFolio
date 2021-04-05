@@ -1,0 +1,30 @@
+.progressbar{
+    width: 350px;
+    height: 5px;
+    background-color: aliceblue;
+    border-radius: 10px;
+
+    &__25{
+        width: 25%;
+    }
+
+    &__50{
+        width: 50%;
+    }
+
+    &__75{
+        width: 75%;
+    }
+
+    &__100{
+        width: 100%;
+    }
+
+    &__white{
+        background-color: $color-white !important;
+    }
+
+    &__blue{
+        background-color: $color-fond !important;
+    }
+}

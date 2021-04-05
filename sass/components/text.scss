@@ -1,5 +1,36 @@
-.text{
-    color: $color-white;
-    font-family: $font;
-    font-size: 1.7rem;
+.text {
+  font-family: $font;
+  font-size: 1.7rem;
+
+  &--white {
+    color: $color-white !important;
+  }
+
+  &--black {
+    color: $color-black !important;
+  }
+
+  &--huge {
+    font-size: 7rem !important;
+  }
+
+  &--medium {
+    font-size: 5rem !important;
+  }
+
+  &--normal {
+    font-size: 3rem !important;
+  }
+
+  &--tiny {
+    font-size: 1rem !important;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--colored {
+    color: rgba(255, 175, 15, 0.8) !important;
+  }
 }

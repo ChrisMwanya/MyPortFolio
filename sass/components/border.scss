@@ -1,14 +1,16 @@
-.border{
-    border: 1px;
+.border {
+  border: 1px;
 
-    &--circle
-    {
-        border-radius: 100%;
-    }
-    &--white
-    {
-        border-style: solid;
-        border-color: $color-underline;
-        border-width: 9px;
-    }
+  &--circle {
+    border-radius: 100%;
+  }
+  &--white {
+    border-style: solid;
+    border-color: $color-underline;
+    border-width: 2px;
+  }
+
+  &--radius15 {
+    border-radius: 15px;
+  }
 }

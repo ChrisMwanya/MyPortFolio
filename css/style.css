@@ -8,6 +8,7 @@
 
 body {
   width: 100vw;
+  overflow-x: hidden;
 }
 
 html {
@@ -20,7 +21,7 @@ a, button {
   text-decoration: none;
   font-size: 2rem;
   font-family: sans-serif;
-  color: aliceblue;
+  color: #FFFFFF !important;
 }
 
 li {
@@ -37,8 +38,9 @@ h1, h2, h3, h4 {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  position: sticky;
+  position: fixed;
   top: 0;
+  z-index: 9;
   width: 100%;
   background-color: #00204F;
 }
@@ -59,21 +61,20 @@ h1, h2, h3, h4 {
 }
 .header a {
   text-decoration: none !important;
-  color: #FFEBC2 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 .header__title-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/fondwebdevelopper.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../../img/fond.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .header__title {
-  font-size: 7rem !important;
-  color: #C2DAFF !important;
   text-transform: uppercase !important;
   text-shadow: #FFFFFF !important;
 }
@@ -92,8 +93,8 @@ h1, h2, h3, h4 {
 }
 .logo {
   display: block;
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
 }
 
 .border {
@@ -105,13 +106,39 @@ h1, h2, h3, h4 {
 .border--white {
   border-style: solid;
   border-color: #C2DAFF;
-  border-width: 9px;
+  border-width: 2px;
+}
+.border--radius15 {
+  border-radius: 15px;
 }
 
 .text {
-  color: #FFFFFF;
   font-family: "Exo 2", sans-serif;
   font-size: 1.7rem;
+}
+.text--white {
+  color: #FFFFFF !important;
+}
+.text--black {
+  color: #000 !important;
+}
+.text--huge {
+  font-size: 7rem !important;
+}
+.text--medium {
+  font-size: 5rem !important;
+}
+.text--normal {
+  font-size: 3rem !important;
+}
+.text--tiny {
+  font-size: 1rem !important;
+}
+.text--center {
+  text-align: center;
+}
+.text--colored {
+  color: rgba(255, 175, 15, 0.8) !important;
 }
 
 .button {
@@ -134,11 +161,14 @@ h1, h2, h3, h4 {
   height: 12%;
 }
 .image--carre-medium {
-  width: 25%;
-  height: 25%;
+  width: 80%;
+  height: 80%;
+}
+.image--opacity {
+  opacity: 0.9;
 }
 
-.social-container {
+.link-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -149,6 +179,7 @@ h1, h2, h3, h4 {
 .section {
   width: 100%;
   padding: 20px;
+  overflow-x: hidden;
 }
 .section--column-right {
   display: flex;
@@ -170,22 +201,96 @@ h1, h2, h3, h4 {
   display: flex;
   align-items: flex-start;
 }
-.section--column-centered {
+.section--row-centered {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.section--column-left {
+.section--row-left {
   display: flex;
   align-items: flex-end;
 }
 .section--background-image {
-  background-color: #C2DAFF;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
 }
 .section__title {
   text-align: center;
   font-size: 3rem;
   width: 100%;
+  color: #000 !important;
+}
+
+.progressbar {
+  width: 350px;
+  height: 5px;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+.progressbar__25 {
+  width: 25%;
+}
+.progressbar__50 {
+  width: 50%;
+}
+.progressbar__75 {
+  width: 75%;
+}
+.progressbar__100 {
+  width: 100%;
+}
+.progressbar__white {
+  background-color: #FFFFFF !important;
+}
+.progressbar__blue {
+  background-color: #00204F !important;
+}
+
+.container {
+  padding: 10px;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+}
+.container--black {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #FFFFFF;
+  width: 35vw;
+  height: 35vh;
+}
+.container--shadow {
+  box-shadow: 5px 5px 2px 1px rgba(255, 175, 15, 0.5);
+}
+.container--shadow-arround {
+  box-shadow: 1px 1px 2px 4px rgba(255, 175, 15, 0.5);
+}
+.container--clear {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), #FFFFFF;
+  width: 40%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.card__title {
+  text-align: center;
+}
+.card__content-table {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

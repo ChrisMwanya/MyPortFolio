@@ -1,0 +1,27 @@
+.container {
+  padding: 10px;
+  border: 2px solid $color-white;
+  border-radius: 10px;
+
+  &--black {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      $color-white;
+
+    width: 35vw;
+    height: 35vh;
+  }
+
+  &--shadow {
+    box-shadow: 5px 5px 2px 1px rgba(255, 175, 15, 0.5);
+  }
+
+  &--shadow-arround {
+    box-shadow: 1px 1px 2px 4px rgba(255, 175, 15, 0.5);
+  }
+
+  &--clear {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+      $color-white;
+    width: 40%;
+  }
+}

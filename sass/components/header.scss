@@ -1,60 +1,51 @@
-.header
-{
-    @include flex-set(row,space-between,center);    
-    padding: 20px;
-    position:sticky;
-    top: 0;
+.header {
+  @include flex-set(row, space-between, center);
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+
+  background-color: $color-fond;
+
+  &__nav-container {
+    @include flex-set(row, space-between, center);
     width: 100%;
-    background-color: $color-fond; 
-    
-    
-    &__nav-container{
-        @include flex-set(row,space-between,center);         
-        width: 100%;
-        background-color: $color-fond; 
-    }
+    background-color: $color-fond;
+  }
 
-    &__menu-line{
-        @include flex-set(flex,space-between,center); 
-        width: 50%;
-    }
-    a{
-        text-decoration: none !important;
-        color:$color-shadow !important;
-        
-    }
-    &__title-container{
-        @include flex-set(column,space-between,center);
-        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5) ), url("../../img/fondwebdevelopper.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    &__title{
-        font-size: 7rem !important;
-        color: $color-underline !important;
-        text-transform: uppercase !important;
-        text-shadow: $color-white!important;
-    }
-    &__description{
-        font-size: 3rem !important;  
-    }
-     
+  &__menu-line {
+    @include flex-set(flex, space-between, center);
+    width: 50%;
+  }
+  a {
+    text-decoration: none !important;
+    color: rgba(255, 255, 255, .9) !important;
+  }
+  &__title-container {
+    @include flex-set(column, space-between, center);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
+      url("../../img/fond.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  &__title {
+    text-transform: uppercase !important;
+    text-shadow: $color-white !important;
+  }
+  &__description {
+    font-size: 3rem !important;
+  }
 }
 
-
-
-.menu-bar
-{
-    display: none !important;
+.menu-bar {
+  display: none !important;
 }
 
-@media screen and (max-width: 1000px){
-    .menu-bar{
-        display: block !important;
-    }
-   
-} 
-
-
-
+@media screen and (max-width: 1000px) {
+  .menu-bar {
+    display: block !important;
+  }
+}

@@ -1,16 +1,17 @@
-.image
-{
-    display: inline-block;
-    
-    &--carre-small
-    {
-        width: 12%;
-        height: 12%;
-    }
+.image {
+  display: inline-block;
 
-    &--carre-medium
-    {
-        width: 25%;
-        height: 25%; 
-    }
+  &--carre-small {
+    width: 12%;
+    height: 12%;
+  }
+
+  &--carre-medium {
+    width: 80%;
+    height: 80%;
+  }
+
+  &--opacity {
+    opacity: 0.9;
+  }
 }
