@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon .ico" type="image/x-icon" />
+    <link rel="icon" href="./img/favicon .ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,200&display=swap"
@@ -38,7 +40,7 @@
               <a href="#moi"><i class="fas fa-user"></i> About me</a>
             </div>
             <div class="">
-              <a href="#work"><i class="fas fa-tasks"></i> What I did</a>
+              <a href="#work"><i class="fas fa-tasks"></i> My recently works</a>
             </div>
             <div class="">
               <a href="#"><i class="fas fa-id-card-alt"></i> Contact</a>
@@ -103,7 +105,7 @@
         </ul>
         <br />
         <br />
-        <button class="button button__huge">Contactez-Moi</button>
+        <button class="button button__huge button--border-white">Contact me</button>
         <br />
         <br /><br /><br /><br />
       </div>
@@ -116,13 +118,14 @@
         <h3 class="section__title section__title__background text text--medium">
           About me
         </h3>
-        <br /><br /><br />
+        <br /><br />
         <div class="section section--column-centered">
           <div>
-            <h4 class="text text--normal">
-              Hi! I'm <span class="text--colored">Christian</span>. <br />
-              Welcome in my univers.
-            </h4>
+            <p class="text text--normal">
+              Hi! I'm <span class="text--colored ">Christian</span>.
+              <br />
+              <span class="text--normal">Welcome in my univers</span> .
+            </p>
             <p class="text">
               Since beginning my journey as a freelance designer nearly 10 years
               ago, I've done remote work for agencies, consulted for startups,
@@ -140,8 +143,8 @@
             <!-- <h4 class="text text--normal">My Skill</h4> -->
             <div class="section section--row-centered text">
               <div class="container container--black container--shadow">
-                <h5 class="text--center text--normal">Technos</h5>
-                <div class="text--medium">
+                <p class="text--center text--normal text--white">Technos</p>
+                <div class="text--medium text--blue">
                   <div class="section--row-centered">
                     <div><i class="fab fa-html5"></i></div>
                     <div><i class="fab fa-css3"></i></div>
@@ -158,15 +161,15 @@
               <div
                 class="container container--black container--shadow section--column-centered"
               >
-                <h5 class="text--center text--normal">Langues</h5>
-                <div class="text">
-                  <p>Français</p>
+                <p class="text--center text--normal text--white">Languages</p>
+                <div class="text text--white">
+                  <p>French</p>
                   <div class="progressbar">
                     <div
                       class="progressbar progressbar__75 progressbar__blue"
                     ></div>
                   </div>
-                  <p>Anglais</p>
+                  <p>English</p>
                   <div class="progressbar">
                     <div
                       class="progressbar progressbar__25 progressbar__blue"
@@ -184,10 +187,7 @@
                       class="progressbar progressbar__50 progressbar__blue"
                     ></div>
                   </div>
-                  <!-- <p>Tshiluba</p>
-                  <div class="progressbar">
-                    <div class="progressbar__50 progressbar__blue"></div>
-                  </div> -->
+                
                 </div>
               </div>
             </div>
@@ -195,57 +195,64 @@
         </div>
       </section>
       <section id="work">
-        <div class="section">
+        <div class="section section--column-centered">
           <h3
             class="section__title section__title__background text text--medium"
           >
-            What I did
+            My recently works
           </h3>
           <br /><br />
-
-          <div>
-            <!-- <div
-            class="container container--clear container--shadow-arround section--column-centered"
-          >
-            <div class="text">
-              <div class="centered">
-                <img
-                  src="./img/works/capturePortfolio.png"
-                  alt="Capture Portfolio"
-                  class="image image--carre-medium border--radius15"
-                />
-              </div>
-              <br />
-              <h6 class="centered">
-                Lorem ipsum dolor sit amet consectetur <br />
-                adipisicing eli perspiciatis pariatur odio!
-              </h6>
-              <br />
-              <ul class="centered link-container">
-                <li>
-                  <a
-                    href="https://github.com/ChrisMwanya/MyPortFolio"
-                    target="blank"
-                    class="text-black"
-                    ><i class="fab fa-github"></i
+          <div class="section section--row-centered" >
+            <div class="card section--column-centered centered  border--radius15">
+              <img src="./img/works/capturePortfolio.png" alt="Capture PortoFolio" class="image image--carre-medium border--radius15">
+              <p class="centered card-title text text--normal">Site PortoFolio</p>
+              <p class="centered text text--centered ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Minus doloribus dolores ipsa, distinctio amet sapiente  </p>
+              <br>
+              <ul class="link-container">
+                <li class="">
+                  <a href="https://github.com/ChrisMwanya" target="blank"
+                    ><i class="fab fa-github text--black"></i
                   ></a>
                 </li>
                 <li>
-                  <a href=""><i class="fas fa-globe"></i></a>
+                  <a
+                    href="#"
+                    target="blank"
+                    ><i class="fas fa-globe text--black"></i></a>
                 </li>
               </ul>
-              <br><br>
-            </div> -->
+            </div>      
             
+            <!-- second  -->
+
+            <div class="card section--column-centered centered  border--radius15">
+              <img src="./img/works/capturePortfolio.png" alt="Capture PortoFolio" class="image image--carre-medium border--radius15">
+              <p class="centered card-title text text--normal">Site PortoFolio</p>
+              <p class="centered text text--centered ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Minus doloribus dolores ipsa, distinctio amet sapiente  </p>
+              <br>
+              <ul class="link-container">
+                <li class="">
+                  <a href="https://github.com/ChrisMwanya" target="blank"
+                    ><i class="fab fa-github text--black"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="blank"
+                    ><i class="fas fa-globe text--black"></i></a>
+                </li>
+              </ul>
+            </div>      
           </div>
-         
-            <div>
-                
-            </div>
-          </div>
+          <button class="button button__small button--border-none text text--black text--tiny">See more</button>  
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      
+    </footer>
   </body>
 </html>

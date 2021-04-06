@@ -33,6 +33,7 @@
         display: flex;        
         justify-content: space-around;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     &--row-left{
@@ -42,7 +43,7 @@
 
     &--background-image{      
         // background-color: $color-underline;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.3));
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0,0,0,0.1));
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;

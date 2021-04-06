@@ -1,6 +1,5 @@
 .container {
-  padding: 10px;
-  border: 2px solid $color-white;
+  padding: 10px;   
   border-radius: 10px;
 
   &--black {
@@ -11,12 +10,16 @@
     height: 35vh;
   }
 
+  &--border{
+    border: 2px solid $color-black ;
+  }
+
   &--shadow {
-    box-shadow: 5px 5px 2px 1px rgba(255, 175, 15, 0.5);
+    box-shadow: 5px 5px 2px 1px $color-shadow-second;
   }
 
   &--shadow-arround {
-    box-shadow: 1px 1px 2px 4px rgba(255, 175, 15, 0.5);
+    box-shadow: 1px 1px 2px 4px $color-shadow-second;
   }
 
   &--clear {

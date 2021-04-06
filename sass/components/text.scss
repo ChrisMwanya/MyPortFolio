@@ -10,6 +10,10 @@
     color: $color-black !important;
   }
 
+  &--blue {
+    color: $color-fond !important;
+  }
+
   &--huge {
     font-size: 7rem !important;
   }
@@ -26,11 +30,11 @@
     font-size: 1rem !important;
   }
 
-  &--center {
+  &--centered {
     text-align: center;
   }
 
   &--colored {
-    color: rgba(255, 175, 15, 0.8) !important;
+    color: $color-shadow-second !important;
   }
 }
