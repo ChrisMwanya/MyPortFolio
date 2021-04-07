@@ -11,11 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,200&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"/> -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    
     <link rel="stylesheet" href="css/style.css" />
     <title>Mwanya Christian | Web developper</title>
   </head>
@@ -31,45 +32,39 @@
                 class="logo"
             /></a>
           </div>
+          <div>
+            <a href="http://" class="link"><i class="fas fa-bars text--normal"></i></a>
+            
+          </div>
           <!-- desktop -->
           <div class="header__menu-line">
             <div class="">
-              <a href="#head"><i class="fas fa-home"></i> Home</a>
+              <a href="#head" class="link"><i class="fas fa-home"></i> Home</a>
             </div>
             <div class="">
-              <a href="#moi"><i class="fas fa-user"></i> About me</a>
+              <a href="#moi" class="link"><i class="fas fa-user"></i> About me</a>
             </div>
             <div class="">
-              <a href="#work"><i class="fas fa-tasks"></i> My recently works</a>
+              <a href="#work" class="link"><i class="fas fa-tasks"></i> My recently works</a>
             </div>
             <div class="">
-              <a href="#"><i class="fas fa-id-card-alt"></i> Contact</a>
+              <a href="#contact" class="link"><i class="fas fa-id-card-alt"></i> Contact</a>
             </div>
             <div class="">
-              <a href="#"><i class="fas fa-download"></i> C.V</a>
+              <a href="#" class="link"><i class="fas fa-download"></i> C.V</a>
             </div>
-          </div>
-          <!-- mobile -->
-          <div class="header__menu-bars">
-            <i class="bars huge icon"></i>
-          </div>
+          </div>        
         </div>
       </div>
-      <div class="header__title-container">
-        <br /><br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+      <div class="section--padding-top header__title-container ">
+        <br /><br /><br><br>
+       
         <img
           src="./img/ProfilChristian.jpg"
           alt="Photo de Christian"
-          class="image image--carre-small image--opacity border border--circle border--white"
+          class="image image--carre-small image--opacity border border--circle border--white "
         />
-
+        <br> <br>
         <h1 class="text text--white text--huge header__title">
           Mwanya <span>Christian</span>
         </h1>
@@ -79,26 +74,26 @@
         </h5>
         <ul class="link-container">
           <li>
-            <a href="https://github.com/ChrisMwanya" target="blank"
+            <a href="https://github.com/ChrisMwanya" target="blank" class="link"
               ><i class="fab fa-github"></i
             ></a>
           </li>
           <li>
             <a
               href="https://www.linkedin.com/in/christianmwanya/"
-              target="blank"
+              target="blank" class="link"
               ><i class="fab fa-linkedin-in"></i
             ></a>
           </li>
           <li>
-            <a href="https://twitter.com/MwanyaChristian" target="blank"
+            <a href="https://twitter.com/MwanyaChristian" target="blank" class="link"
               ><i class="fab fa-twitter"></i
             ></a>
           </li>
           <li>
             <a
               href="https://www.youtube.com/channel/UCP71VRR2Yqk8ZIqQMVYty6Q"
-              target="blank"
+              target="blank" class="link"
               ><i class="fab fa-youtube"></i
             ></a>
           </li>
@@ -113,12 +108,11 @@
     <main class="main">
       <section
         id="moi"
-        class="section section--column-centered section--background-image"
+        class="section section--column-centered section--background-image section--padding-top"
       >
         <h3 class="section__title section__title__background text text--medium">
           About me
-        </h3>
-        <br /><br />
+        </h3>        
         <div class="section section--column-centered">
           <div>
             <p class="text text--normal">
@@ -142,16 +136,16 @@
           <div class="section section--column-centered">
             <!-- <h4 class="text text--normal">My Skill</h4> -->
             <div class="section section--row-centered text">
-              <div class="container container--black container--shadow">
-                <p class="text--center text--normal text--white">Technos</p>
+              <div class="container container--black card--shadow">
+                <p class="text--center centered text--normal text--black">Technos</p>
                 <div class="text--medium text--blue">
                   <div class="section--row-centered">
                     <div><i class="fab fa-html5"></i></div>
                     <div><i class="fab fa-css3"></i></div>
-                    <div><i class="fab fa-js-square"></i></div>
+                    <div><i class="fab fa-sass"></i></div>
                   </div>
                   <div class="section--row-centered">
-                    <div><i class="fab fa-java"></i></div>
+                    <div><i class="fab fa-js-square"></i></div>
                     <div><i class="fab fa-react"></i></div>
                     <div><i class="fas fa-database"></i></div>
                   </div>
@@ -159,16 +153,17 @@
               </div>
 
               <div
-                class="container container--black container--shadow section--column-centered"
+                class="container container--black  card--shadow section--column-centered"
               >
-                <p class="text--center text--normal text--white">Languages</p>
-                <div class="text text--white">
+                <p class="text--center text--normal text--black">Languages</p>
+                <div class="text text--blue">
                   <p>French</p>
                   <div class="progressbar">
                     <div
                       class="progressbar progressbar__75 progressbar__blue"
                     ></div>
                   </div>
+                  
                   <p>English</p>
                   <div class="progressbar">
                     <div
@@ -186,6 +181,7 @@
                     <div
                       class="progressbar progressbar__50 progressbar__blue"
                     ></div>
+                  
                   </div>
                 
                 </div>
@@ -195,15 +191,15 @@
         </div>
       </section>
       <section id="work">
-        <div class="section section--column-centered">
+        <div class="section section--column-centered section--padding-top">
           <h3
             class="section__title section__title__background text text--medium"
           >
             My recently works
           </h3>
-          <br /><br />
+          <br />
           <div class="section section--row-centered" >
-            <div class="card section--column-centered centered  border--radius15">
+            <div class="card section--column-centered centered  border--radius15 card--shadow">
               <img src="./img/works/capturePortfolio.png" alt="Capture PortoFolio" class="image image--carre-medium border--radius15">
               <p class="centered card-title text text--normal">Site PortoFolio</p>
               <p class="centered text text--centered ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -211,14 +207,14 @@
               <br>
               <ul class="link-container">
                 <li class="">
-                  <a href="https://github.com/ChrisMwanya" target="blank"
+                  <a href="https://github.com/ChrisMwanya" target="blank" class="link"
                     ><i class="fab fa-github text--black"></i
                   ></a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    target="blank"
+                    target="blank" class="link"
                     ><i class="fas fa-globe text--black"></i></a>
                 </li>
               </ul>
@@ -226,7 +222,7 @@
             
             <!-- second  -->
 
-            <div class="card section--column-centered centered  border--radius15">
+            <div class="card section--column-centered centered  border--radius15 card--shadow">
               <img src="./img/works/capturePortfolio.png" alt="Capture PortoFolio" class="image image--carre-medium border--radius15">
               <p class="centered card-title text text--normal">Site PortoFolio</p>
               <p class="centered text text--centered ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -234,25 +230,88 @@
               <br>
               <ul class="link-container">
                 <li class="">
-                  <a href="https://github.com/ChrisMwanya" target="blank"
+                  <a href="https://github.com/ChrisMwanya" target="blank" class="link"
                     ><i class="fab fa-github text--black"></i
                   ></a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    target="blank"
+                    target="blank" class="link"
                     ><i class="fas fa-globe text--black"></i></a>
                 </li>
               </ul>
             </div>      
           </div>
-          <button class="button button__small button--border-none text text--black text--tiny">See more</button>  
+          <br> <br>
+          <button class="button button__small button--border-grey text text--black text--tiny">See more</button>  
+        </div>
+        <br> 
+      </section >
+      <section id="contact" class="centered">
+        <div class="section section--column-centered   section--background-image section--padding-top">
+          <h3 class="section__title section__title__background text text--medium">
+            Contact Me
+          </h3>
+          <div class="form text">
+            <p class="">Laissez moi un petit message</p>
+            <div class="form__field">
+              <label for="names">Your name</label><input type="text" name="" id="names" class="form__input">              
+            </div>
+            <div class="form__field">
+              <label for="email">Your Email</label><input type="email" name="" id="email" class="form__input">
+            </div>
+            <div class="form__field">
+              <label for="message">Your Message</label>
+              <textarea name="" id="message" cols="30" rows="3" class="form__textarea"></textarea>
+            </div>
+            <div class="form__field ">
+              <button type="submit" class="button button button--border-black  text text--black ">Envoyer</button>
+            </div>
+          </div> 
+          <br>
+          
+                   
         </div>
       </section>
     </main>
-    <footer>
-      
+    <footer class="footer section section--column-centered">
+      <br>
+      <br>
+      <div class="centered">
+        <img src="./img/logochristianWhite.png" alt="logo Christian Mwanya" class="image image--carre-normal">
+      </div>
+      <br> 
+      <ul class="link-container">
+        <li>
+          <a href="https://github.com/ChrisMwanya" target="blank" class="link"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/christianmwanya/"
+            target="blank" class="link"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/MwanyaChristian" target="blank" class="link"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/channel/UCP71VRR2Yqk8ZIqQMVYty6Q"
+            target="blank" class="link"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </li>
+      </ul>
+      <br>     
+      <div class="centered">       
+        <p class="text text--colored">&copy; MWANYA Christian 2021</p>
+      </div>
     </footer>
   </body>
 </html>

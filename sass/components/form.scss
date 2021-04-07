@@ -1,0 +1,27 @@
+.form{
+    @include flex-set(column,space-around,center);
+    height: 70vh;
+    width: 80vw;
+
+    &__field{
+        @include flex-set(column,space-around,flex-start);
+        width: 50%;
+        
+        
+        
+    }
+
+    &__input{
+        width: 60%;
+        border-radius: 15px;
+        border: none;
+        font-size: 3rem;
+    }
+
+    &__textarea{
+        width: 100%;
+        border-radius: 15px;
+        border: none;
+        font-size: 3rem;
+    }
+}

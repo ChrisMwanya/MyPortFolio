@@ -1,13 +1,14 @@
 .container {
-  padding: 10px;   
+  padding: 4%;   
   border-radius: 10px;
+  width: 35vw;
+  height: 45vh;
 
   &--black {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      $color-white;
-
-    width: 35vw;
-    height: 35vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(23,45, 0, 0.2)), white
+    ;
+     
+    // 
   }
 
   &--border{
