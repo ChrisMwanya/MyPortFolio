@@ -38,3 +38,26 @@
     color: $color-shadow-second !important;
   }
 }
+
+@include breakpoint(tablet){
+  .text{
+    // padding: 2px;
+
+    &--huge {
+      font-size: 7rem !important;
+    }
+  
+    &--medium {
+      font-size: 6rem !important;
+    }
+  
+    &--normal {
+      font-size: 4rem !important;
+    }
+  
+    &--tiny {
+      font-size: 3rem !important;
+    }  
+  
+  }
+}

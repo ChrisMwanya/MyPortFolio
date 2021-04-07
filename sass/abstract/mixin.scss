@@ -32,3 +32,21 @@
 @mixin color-set($color){
     color:$color;
 }
+
+@mixin  breakpoint($point) {
+    @if $point == mobile {
+        @media screen and(max-width: 760px) {
+            @content;
+        }
+    }
+    @else if $point == tablet {
+        @media screen and(max-width: 1225px) {
+            @content;
+        }
+    }
+    @else if $point == desktop {
+        @media screen and(min-width: 1225px) {
+            @content;
+        }
+    }
+}

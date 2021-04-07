@@ -40,6 +40,9 @@ li {
   width: 100%;
   background-color: #00204F;
 }
+.header__menu-phone {
+  display: none;
+}
 .header__nav-container {
   display: flex;
   flex-direction: row;
@@ -73,44 +76,30 @@ li {
 }
 .header__title {
   text-transform: uppercase !important;
-  text-shadow: #FFFFFF !important;
-}
-.header__description {
-  font-size: 3rem !important;
 }
 
-.menu-bar {
-  display: none !important;
-}
-
-@media screen and (max-width: 1000px) {
-  .menu-bar {
-    display: block !important;
+@media screen and (max-width: 1225px) {
+  .header {
+    padding: 2px;
   }
-}
-@keyframes bg-pan-br {
-  0% {
-    background-position: 0% 0%;
+  .header__menu-phone {
+    display: block;
   }
-  25% {
-    background-position: 25% 25%;
-  }
-  50% {
-    background-position: 50% 50%;
-  }
-  75% {
-    background-position: 75% 75%;
-  }
-  100% {
-    background-position: 100% 100%;
+  .header__menu-line {
+    display: none;
   }
 }
 .logo {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 10%;
+  height: 10%;
 }
 
+@media screen and (max-width: 760px) {
+  .logo {
+    display: none;
+  }
+}
 .border {
   border: 1px;
 }
@@ -158,6 +147,20 @@ li {
   color: rgba(240, 123, 45, 0.8) !important;
 }
 
+@media screen and (max-width: 1225px) {
+  .text--huge {
+    font-size: 7rem !important;
+  }
+  .text--medium {
+    font-size: 6rem !important;
+  }
+  .text--normal {
+    font-size: 4rem !important;
+  }
+  .text--tiny {
+    font-size: 3rem !important;
+  }
+}
 .button {
   background: none;
   border-radius: 25px;
@@ -215,6 +218,22 @@ li {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
   }
 }
+@media screen and (max-width: 1225px) {
+  .button__huge {
+    width: 40%;
+  }
+  .button__small {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .button__huge {
+    width: 100%;
+  }
+  .button__small {
+    width: 50%;
+  }
+}
 .image {
   display: inline-block;
 }
@@ -234,6 +253,18 @@ li {
   opacity: 0.9;
 }
 
+@media screen and (max-width: 1225px) {
+  .image--carre-small {
+    width: 50%;
+    height: 50%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .image--carre-small {
+    width: 90%;
+    height: 90%;
+  }
+}
 .link-container {
   display: flex;
   flex-direction: row;
@@ -242,6 +273,11 @@ li {
   width: 15%;
 }
 
+@media screen and (max-width: 760px) {
+  .link-container {
+    display: none;
+  }
+}
 .section {
   width: 100%;
   padding: 20px;
@@ -294,6 +330,22 @@ li {
   color: #000 !important;
 }
 
+@media screen and (max-width: 760px) {
+  .section {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .section--row-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .section--row-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
 .progressbar {
   width: 350px;
   height: 5px;

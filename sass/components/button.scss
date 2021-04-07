@@ -1,68 +1,91 @@
-.button{
-    background: none;
-    border-radius: 25px;
-    padding: 20px;
-    outline: none;
-    
-    color: $color-white;
-    cursor: pointer;
+.button {
+  background: none;
+  border-radius: 25px;
+  padding: 20px;
+  outline: none;
 
-    &--border-white{
-        border: 3px solid $color-white;
-    }
+  color: $color-white;
+  cursor: pointer;
 
-    &--border-black{
-        border: 3px solid $color-black;
-    }
+  &--border-white {
+    border: 3px solid $color-white;
+  }
 
-    &--border-grey{
-        border: 3px solid grey;
-    }
+  &--border-black {
+    border: 3px solid $color-black;
+  }
 
-    &--border-colored{
-        border: 3px solid $color-shadow-second;
-    }
+  &--border-grey {
+    border: 3px solid grey;
+  }
 
-    &--border-none{
-        border: none;
-        border-bottom: 2px solid $color-shadow-second;
-    }
-    &:hover{
-        animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        border-color: $color-white;
-        background-color: $color-shadow-second;
-    }
-    &:active{
-        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    }
+  &--border-colored {
+    border: 3px solid $color-shadow-second;
+  }
 
-    &__huge{
-        width: 15%;
-    }
+  &--border-none {
+    border: none;
+    border-bottom: 2px solid $color-shadow-second;
+  }
+  &:hover {
+    animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    border-color: $color-white;
+    background-color: $color-shadow-second;
+  }
+  &:active {
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+  }
 
-    &__small{
-        width: 10%;
-    }
+  &__huge {
+    width: 15%;
+  }
 
+  &__small {
+    width: 10%;
+  }
 }
 
 @keyframes shadow-drop-center {
-    0% {
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    }
-    100% {
-      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-    }
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
+  100% {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
 
-  @keyframes shadow-drop-2-center {
-    0% {
-      transform: translateZ(0);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+@keyframes shadow-drop-2-center {
+  0% {
+    transform: translateZ(0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: translateZ(50px);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@include breakpoint(tablet) {
+  .button {
+    &__huge {
+      width: 40%;
     }
-    100% {
-      transform: translateZ(50px);
-      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+
+    &__small {
+      width: 30%;
     }
   }
-  
+}
+
+@include breakpoint(mobile) {
+  .button {
+    &__huge {
+      width: 100%;
+    }
+
+    &__small {
+      width: 50%;
+    }
+  }
+}

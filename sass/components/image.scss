@@ -20,3 +20,27 @@
     opacity: 0.9;
   }
 }
+
+@include breakpoint(tablet){
+  .image{
+    // padding: 2px;
+
+    &--carre-small {
+      width: 50%;
+      height: 50%;
+    }    
+  
+  }
+}
+
+@include breakpoint(mobile){
+  .image{
+    // padding: 2px;
+
+    &--carre-small {
+      width: 90%;
+      height: 90%;
+    }    
+  
+  }
+}

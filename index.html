@@ -11,12 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,200&display=swap"
       rel="stylesheet"
     />
-    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <!-- <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    
+
     <link rel="stylesheet" href="css/style.css" />
     <title>Mwanya Christian | Web developper</title>
   </head>
@@ -32,44 +32,55 @@
                 class="logo"
             /></a>
           </div>
-          <div>
-            <a href="http://" class="link"><i class="fas fa-bars text--normal"></i></a>
-            
+          <!-- mobile -->
+          <div class="header__menu-phone">
+            <a href="http://" class="link" id="humburger"
+              ><i class="fas fa-bars text--normal"></i
+            ></a>
           </div>
           <!-- desktop -->
-          <div class="header__menu-line">
+          <div class="header__menu-line" id="menu-line">
             <div class="">
               <a href="#head" class="link"><i class="fas fa-home"></i> Home</a>
             </div>
             <div class="">
-              <a href="#moi" class="link"><i class="fas fa-user"></i> About me</a>
+              <a href="#moi" class="link"
+                ><i class="fas fa-user"></i> About me</a
+              >
             </div>
             <div class="">
-              <a href="#work" class="link"><i class="fas fa-tasks"></i> My recently works</a>
+              <a href="#work" class="link"
+                ><i class="fas fa-tasks"></i> My recently works</a
+              >
             </div>
             <div class="">
-              <a href="#contact" class="link"><i class="fas fa-id-card-alt"></i> Contact</a>
+              <a href="#contact" class="link"
+                ><i class="fas fa-id-card-alt"></i> Contact</a
+              >
             </div>
             <div class="">
               <a href="#" class="link"><i class="fas fa-download"></i> C.V</a>
             </div>
-          </div>        
+          </div>
         </div>
       </div>
-      <div class="section--padding-top header__title-container ">
-        <br /><br /><br><br>
-       
+      <div class="section--padding-top header__title-container">
+        <br /><br /><br /><br />
+
         <img
           src="./img/ProfilChristian.jpg"
           alt="Photo de Christian"
-          class="image image--carre-small image--opacity border border--circle border--white "
+          class="image image--carre-small image--opacity border border--circle border--white"
         />
-        <br> <br>
+        <br />
+        <br />
         <h1 class="text text--white text--huge header__title">
           Mwanya <span>Christian</span>
         </h1>
 
-        <h5 class="text text--white header__description text--colored">
+        <h5
+          class="text text--white header__description text--normal text--colored"
+        >
           Web Developper
         </h5>
         <ul class="link-container">
@@ -81,26 +92,33 @@
           <li>
             <a
               href="https://www.linkedin.com/in/christianmwanya/"
-              target="blank" class="link"
+              target="blank"
+              class="link"
               ><i class="fab fa-linkedin-in"></i
             ></a>
           </li>
           <li>
-            <a href="https://twitter.com/MwanyaChristian" target="blank" class="link"
+            <a
+              href="https://twitter.com/MwanyaChristian"
+              target="blank"
+              class="link"
               ><i class="fab fa-twitter"></i
             ></a>
           </li>
           <li>
             <a
               href="https://www.youtube.com/channel/UCP71VRR2Yqk8ZIqQMVYty6Q"
-              target="blank" class="link"
+              target="blank"
+              class="link"
               ><i class="fab fa-youtube"></i
             ></a>
           </li>
         </ul>
         <br />
         <br />
-        <button class="button button__huge button--border-white">Contact me</button>
+        <button class="button button__huge button--border-white">
+          Contact me
+        </button>
         <br />
         <br /><br /><br /><br />
       </div>
@@ -112,11 +130,11 @@
       >
         <h3 class="section__title section__title__background text text--medium">
           About me
-        </h3>        
+        </h3>
         <div class="section section--column-centered">
           <div>
             <p class="text text--normal">
-              Hi! I'm <span class="text--colored ">Christian</span>.
+              Hi! I'm <span class="text--colored">Christian</span>.
               <br />
               <span class="text--normal">Welcome in my univers</span> .
             </p>
@@ -137,7 +155,9 @@
             <!-- <h4 class="text text--normal">My Skill</h4> -->
             <div class="section section--row-centered text">
               <div class="container container--black card--shadow">
-                <p class="text--center centered text--normal text--black">Technos</p>
+                <p class="text--center centered text--normal text--black">
+                  Technos
+                </p>
                 <div class="text--medium text--blue">
                   <div class="section--row-centered">
                     <div><i class="fab fa-html5"></i></div>
@@ -153,7 +173,7 @@
               </div>
 
               <div
-                class="container container--black  card--shadow section--column-centered"
+                class="container container--black card--shadow section--column-centered"
               >
                 <p class="text--center text--normal text--black">Languages</p>
                 <div class="text text--blue">
@@ -163,7 +183,7 @@
                       class="progressbar progressbar__75 progressbar__blue"
                     ></div>
                   </div>
-                  
+
                   <p>English</p>
                   <div class="progressbar">
                     <div
@@ -181,9 +201,7 @@
                     <div
                       class="progressbar progressbar__50 progressbar__blue"
                     ></div>
-                  
                   </div>
-                
                 </div>
               </div>
             </div>
@@ -198,90 +216,138 @@
             My recently works
           </h3>
           <br />
-          <div class="section section--row-centered" >
-            <div class="card section--column-centered centered  border--radius15 card--shadow">
-              <img src="./img/works/capturePortfolio.png" alt="Capture PortoFolio" class="image image--carre-medium border--radius15">
-              <p class="centered card-title text text--normal">Site PortoFolio</p>
-              <p class="centered text text--centered ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Minus doloribus dolores ipsa, distinctio amet sapiente  </p>
-              <br>
+          <div class="section section--row-centered">
+            <div
+              class="card section--column-centered centered border--radius15 card--shadow"
+            >
+              <img
+                src="./img/works/capturePortfolio.png"
+                alt="Capture PortoFolio"
+                class="image image--carre-medium border--radius15"
+              />
+              <p class="centered card-title text text--normal">
+                Site PortoFolio
+              </p>
+              <p class="centered text text--centered">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                doloribus dolores ipsa, distinctio amet sapiente
+              </p>
+              <br />
               <ul class="link-container">
                 <li class="">
-                  <a href="https://github.com/ChrisMwanya" target="blank" class="link"
+                  <a
+                    href="https://github.com/ChrisMwanya"
+                    target="blank"
+                    class="link"
                     ><i class="fab fa-github text--black"></i
                   ></a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    target="blank" class="link"
-                    ><i class="fas fa-globe text--black"></i></a>
+                  <a href="#" target="blank" class="link"
+                    ><i class="fas fa-globe text--black"></i
+                  ></a>
                 </li>
               </ul>
-            </div>      
-            
+            </div>
+
             <!-- second  -->
 
-            <div class="card section--column-centered centered  border--radius15 card--shadow">
-              <img src="./img/works/capturePortfolio.png" alt="Capture PortoFolio" class="image image--carre-medium border--radius15">
-              <p class="centered card-title text text--normal">Site PortoFolio</p>
-              <p class="centered text text--centered ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Minus doloribus dolores ipsa, distinctio amet sapiente  </p>
-              <br>
+            <div
+              class="card section--column-centered centered border--radius15 card--shadow"
+            >
+              <img
+                src="./img/works/capturePortfolio.png"
+                alt="Capture PortoFolio"
+                class="image image--carre-medium border--radius15"
+              />
+              <p class="centered card-title text text--normal">
+                Site PortoFolio
+              </p>
+              <p class="centered text text--centered">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+                doloribus dolores ipsa, distinctio amet sapiente
+              </p>
+              <br />
               <ul class="link-container">
                 <li class="">
-                  <a href="https://github.com/ChrisMwanya" target="blank" class="link"
+                  <a
+                    href="https://github.com/ChrisMwanya"
+                    target="blank"
+                    class="link"
                     ><i class="fab fa-github text--black"></i
                   ></a>
                 </li>
                 <li>
-                  <a
-                    href="#"
-                    target="blank" class="link"
-                    ><i class="fas fa-globe text--black"></i></a>
+                  <a href="#" target="blank" class="link"
+                    ><i class="fas fa-globe text--black"></i
+                  ></a>
                 </li>
               </ul>
-            </div>      
+            </div>
           </div>
-          <br> <br>
-          <button class="button button__small button--border-grey text text--black text--tiny">See more</button>  
+          <br />
+          <br />
+          <button
+            class="button button__small button--border-grey text text--black text--tiny"
+          >
+            See more
+          </button>
         </div>
-        <br> 
-      </section >
+        <br />
+      </section>
       <section id="contact" class="centered">
-        <div class="section section--column-centered   section--background-image section--padding-top">
-          <h3 class="section__title section__title__background text text--medium">
+        <div
+          class="section section--column-centered section--background-image section--padding-top"
+        >
+          <h3
+            class="section__title section__title__background text text--medium"
+          >
             Contact Me
           </h3>
           <div class="form text">
             <p class="">Laissez moi un petit message</p>
             <div class="form__field">
-              <label for="names">Your name</label><input type="text" name="" id="names" class="form__input">              
+              <label for="names">Your name</label
+              ><input type="text" name="" id="names" class="form__input" />
             </div>
             <div class="form__field">
-              <label for="email">Your Email</label><input type="email" name="" id="email" class="form__input">
+              <label for="email">Your Email</label
+              ><input type="email" name="" id="email" class="form__input" />
             </div>
             <div class="form__field">
               <label for="message">Your Message</label>
-              <textarea name="" id="message" cols="30" rows="3" class="form__textarea"></textarea>
+              <textarea
+                name=""
+                id="message"
+                cols="30"
+                rows="3"
+                class="form__textarea"
+              ></textarea>
             </div>
-            <div class="form__field ">
-              <button type="submit" class="button button button--border-black  text text--black ">Envoyer</button>
+            <div class="form__field">
+              <button
+                type="submit"
+                class="button button button--border-black text text--black"
+              >
+                Envoyer
+              </button>
             </div>
-          </div> 
-          <br>
-          
-                   
+          </div>
+          <br />
         </div>
       </section>
     </main>
     <footer class="footer section section--column-centered">
-      <br>
-      <br>
+      <br />
+      <br />
       <div class="centered">
-        <img src="./img/logochristianWhite.png" alt="logo Christian Mwanya" class="image image--carre-normal">
+        <img
+          src="./img/logochristianWhite.png"
+          alt="logo Christian Mwanya"
+          class="image image--carre-normal"
+        />
       </div>
-      <br> 
+      <br />
       <ul class="link-container">
         <li>
           <a href="https://github.com/ChrisMwanya" target="blank" class="link"
@@ -291,27 +357,34 @@
         <li>
           <a
             href="https://www.linkedin.com/in/christianmwanya/"
-            target="blank" class="link"
+            target="blank"
+            class="link"
             ><i class="fab fa-linkedin-in"></i
           ></a>
         </li>
         <li>
-          <a href="https://twitter.com/MwanyaChristian" target="blank" class="link"
+          <a
+            href="https://twitter.com/MwanyaChristian"
+            target="blank"
+            class="link"
             ><i class="fab fa-twitter"></i
           ></a>
         </li>
         <li>
           <a
             href="https://www.youtube.com/channel/UCP71VRR2Yqk8ZIqQMVYty6Q"
-            target="blank" class="link"
+            target="blank"
+            class="link"
             ><i class="fab fa-youtube"></i
           ></a>
         </li>
       </ul>
-      <br>     
-      <div class="centered">       
+      <br />
+      <div class="centered">
         <p class="text text--colored">&copy; MWANYA Christian 2021</p>
       </div>
     </footer>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

@@ -1,7 +1,14 @@
 .link-container
 {
     @include flex-set(row,space-between,center);
-    width: 15%;
-
-    
+    width: 15%;    
 }
+
+@include breakpoint(mobile){
+    .link-container{
+      // padding: 2px;
+  
+      display: none;   
+    
+    }
+  }
