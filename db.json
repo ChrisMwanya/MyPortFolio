@@ -3,9 +3,9 @@
         {"nom":"Mwanya","prenom":"Christian","fonction":"Web developper"}
     ],
     "about":[
-        {"biography":""},
-        {"technos" :["Html","Css","Sass","Javascript"]},
-        {"languages":["Frensh","English","Lingala","Swahili"]}
+        {"biography":"Hi! I'm Christian.",
+        "technos" :["Html","Css","Sass","Javascript"],
+        "languages":["Frensh","English","Lingala","Swahili"]}
     ],
     "MyWorks":[
         {"projet":"PortFolio","description":"","links":["github","www"]}
