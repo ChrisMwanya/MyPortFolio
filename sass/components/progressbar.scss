@@ -28,3 +28,47 @@
         background-color: $color-fond !important;
     }
 }
+
+@include breakpoint(tablet){
+    .progressbar{
+        width: 380px;
+        &__25{
+            width: 25%;
+        }
+    
+        &__50{
+            width: 50%;
+        }
+    
+        &__75{
+            width: 75%;
+        }
+    
+        &__100{
+            width: 100%;
+        }
+    }
+    
+}
+
+@include breakpoint(mobile){
+    .progressbar{
+        width: 280px;
+        &__25{
+            width: 25%;
+        }
+    
+        &__50{
+            width: 50%;
+        }
+    
+        &__75{
+            width: 75%;
+        }
+    
+        &__100{
+            width: 100%;
+        }
+    }
+    
+}

@@ -80,12 +80,32 @@ li {
 
 @media screen and (max-width: 1225px) {
   .header {
-    padding: 2px;
+    position: fixed;
   }
   .header__menu-phone {
     display: block;
+    cursor: pointer;
   }
   .header__menu-line {
+    display: none;
+  }
+  .header__nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #00204F;
+  }
+  .header .show {
+    display: block;
+    background: transparent;
+    text-align: center;
+  }
+  .header .link span {
+    display: none;
+  }
+  .header .hide {
     display: none;
   }
 }
@@ -95,6 +115,11 @@ li {
   height: 10%;
 }
 
+@media screen and (max-width: 1225px) {
+  .logo {
+    display: none;
+  }
+}
 @media screen and (max-width: 760px) {
   .logo {
     display: none;
@@ -330,9 +355,11 @@ li {
   color: #000 !important;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1225px) {
   .section {
     width: 100vw;
+    height: 100% !important;
+    padding: 15px;
     overflow-x: hidden;
   }
   .section--row-right {
@@ -344,6 +371,9 @@ li {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+  }
+  .section--hide {
+    display: none;
   }
 }
 .progressbar {
@@ -371,11 +401,45 @@ li {
   background-color: #00204F !important;
 }
 
+@media screen and (max-width: 1225px) {
+  .progressbar {
+    width: 380px;
+  }
+  .progressbar__25 {
+    width: 25%;
+  }
+  .progressbar__50 {
+    width: 50%;
+  }
+  .progressbar__75 {
+    width: 75%;
+  }
+  .progressbar__100 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .progressbar {
+    width: 280px;
+  }
+  .progressbar__25 {
+    width: 25%;
+  }
+  .progressbar__50 {
+    width: 50%;
+  }
+  .progressbar__75 {
+    width: 75%;
+  }
+  .progressbar__100 {
+    width: 100%;
+  }
+}
 .container {
   padding: 4%;
   border-radius: 10px;
   width: 35vw;
-  height: 45vh;
+  height: 60vh;
 }
 .container--black {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(23, 45, 0, 0.2)), white;
@@ -394,6 +458,12 @@ li {
   width: 40%;
 }
 
+@media screen and (max-width: 1225px) {
+  .container {
+    width: 50%;
+    height: 50%;
+  }
+}
 .card {
   padding: 3%;
   width: 40%;
@@ -449,6 +519,22 @@ li {
 
 .link:hover {
   opacity: 0.5;
+}
+
+.boxposition {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1225px) {
+  .boxposition {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

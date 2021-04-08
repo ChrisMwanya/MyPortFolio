@@ -2,13 +2,12 @@
   padding: 4%;   
   border-radius: 10px;
   width: 35vw;
-  height: 45vh;
+  height: 60vh;
 
   &--black {
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(23,45, 0, 0.2)), white
-    ;
-     
-    // 
+    ;  
+    
   }
 
   &--border{
@@ -27,5 +26,12 @@
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
       $color-white;
     width: 40%;
+  }
+}
+
+@include breakpoint(tablet){
+  .container{
+    width: 50%;
+    height: 50%;
   }
 }

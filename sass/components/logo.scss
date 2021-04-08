@@ -7,6 +7,15 @@
     
 }
 
+@include breakpoint(tablet){
+  .logo{
+    // padding: 2px;
+
+    display: none;    
+  
+  }
+}
+
 @include breakpoint(mobile){
     .logo{
       // padding: 2px;

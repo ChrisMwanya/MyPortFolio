@@ -44,13 +44,35 @@
 
 @include breakpoint(tablet){
     .header{
-      padding: 2px;
-
+       
+      position: fixed;      
       &__menu-phone{
         display: block;
+        cursor: pointer;
       }
 
       &__menu-line {
+        display: none; 
+            
+      }
+      &__nav-container {
+        @include flex-set(column, space-between, center);
+        width: 100%;
+        background-color: $color-fond;
+      }
+
+      .show{
+        display: block;
+        background: transparent;
+        text-align: center;
+        
+      }
+
+      .link span{
+        display: none;
+      }
+
+      .hide{
         display: none;
       }
     
