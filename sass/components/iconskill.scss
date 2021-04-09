@@ -1,0 +1,11 @@
+.iconskill{
+    width: 25%;
+    padding: 2vh 0;
+}
+
+@include breakpoint(tablet){
+    .iconskill{
+        width: 50%;
+        padding: 2vh 0;
+    }
+}

@@ -19,7 +19,7 @@
 
   &__menu-line {
     @include flex-set(flex, space-between, center);
-    width: 50%;
+    width: 65%;
   }
   a {
     text-decoration: none !important;
@@ -28,12 +28,12 @@
   &__title-container {
     @include flex-set(column, space-between, center);
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
-      url("../../img/fond.jpg");
+      url('../../img/fond.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    animation: bg-pan-br 30s  both infinite;
+    // animation: bg-pan-br 10s  both infinite;
   }
   &__title {
     text-transform: uppercase !important;
@@ -53,10 +53,11 @@
 
       &__menu-line {
         display: none; 
+        
             
       }
       &__nav-container {
-        @include flex-set(column, space-between, center);
+        @include flex-set(row, space-between, center);
         width: 100%;
         background-color: $color-fond;
       }
@@ -65,6 +66,7 @@
         display: block;
         background: transparent;
         text-align: center;
+        @include flex-set(row, space-between, center);
         
       }
 
@@ -77,6 +79,15 @@
       }
     
     }
+}
+
+@keyframes bg-pan-br {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
 }
 
 

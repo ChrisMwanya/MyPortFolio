@@ -5,23 +5,24 @@
 
     &__field{
         @include flex-set(column,space-around,flex-start);
-        width: 50%;
-        
-        
-        
+        width: 50%;  
     }
 
-    &__input{
-        width: 60%;
-        border-radius: 15px;
-        border: none;
-        font-size: 3rem;
-    }
-
-    &__textarea{
+    &__input,&__textarea {
         width: 100%;
-        border-radius: 15px;
+        border-radius: 5px;
         border: none;
         font-size: 3rem;
+        padding-top: 5px;        
+        border-top-style: none;
+        border-left-style: none;
+        border-right-style: none;
+        border-bottom: 1px solid grey;
+        background: none;  
     }
+
+    &__input:focus,&__textarea:focus{
+        outline: none;
+    }
+
 }

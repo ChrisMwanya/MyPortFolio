@@ -1,12 +1,18 @@
 .section
 {
-    width: 100%;
-    padding: 20px;    
-    overflow-x: hidden;
+    width: 100% !important;   
+    padding-bottom: 20px;
 
     &--padding-top{
         padding-top: 5%;
     }
+
+    &--padding{
+        padding:30px  60px;
+    }
+
+   
+
     &--column-right{
         display: flex;
         flex-direction: column;
@@ -16,7 +22,7 @@
     &--column-centered{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
     }
 
@@ -25,6 +31,13 @@
         flex-direction: column;
         align-items:flex-end;
     }
+
+    &--background-color{        
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    } 
 
 
     &--row-right{
@@ -36,7 +49,7 @@
         display: flex;        
         justify-content: space-around;
         align-items: center;
-        flex-wrap: wrap;
+        flex-wrap: wrap;    
     }
 
     &--row-left{
@@ -46,11 +59,13 @@
 
     &--background-image{      
         // background-color: $color-underline;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0,0,0,0.1));
+        background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0,0,0,0.1));
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         z-index: 0;
+       
+        
     }
 
     &__title
@@ -63,19 +78,36 @@
 
 }
 
+
 @include breakpoint(tablet){
     .section{
         width: 100vw;
         height: 100% !important;
-        padding: 15px;
+        padding: 20px;
         overflow-x: hidden;
         &--row-right{
             display: flex;  
             flex-direction: column;      
             align-items:flex-start
         }
+        // &--row-centered{
+        //     display: flex;  
+        //     flex-direction: column;      
+        //     justify-content: space-around;
+        //     align-items: center;
+        //     flex-wrap: wrap;    
+        // }
     
-       
+        &--background-color{
+            
+            width: 90%;
+            margin: 2vh 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+      
     
         &--row-left{
             display: flex;
@@ -90,3 +122,5 @@
     
     }
   }
+
+  
