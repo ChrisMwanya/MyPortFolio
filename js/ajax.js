@@ -25,7 +25,7 @@ window.onload = () => {
     const nextLine = document.createElement('br');
     const biography = document.createElement('p');
 
-    fetch("http://localhost:3000/about").then(function (response) {
+    fetch("https://my-json-server.typicode.com/ChrisMwanya/MyPortFolio/about").then(function (response) {
         
         return response.json();
     }).then(function (data){   
