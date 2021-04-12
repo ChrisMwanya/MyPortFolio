@@ -28,12 +28,12 @@
   &__title-container {
     @include flex-set(column, space-between, center);
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
-      url('../../img/fond.jpg');
+      url('../../img/informatique.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    // animation: bg-pan-br 10s  both infinite;
+     animation: bg-pan-br 10s  both infinite;
   }
   &__title {
     text-transform: uppercase !important;
@@ -64,7 +64,7 @@
 
       .show{
         display: block;
-        background: transparent;
+        background: transparent ;
         text-align: center;
         @include flex-set(row, space-between, center);
         

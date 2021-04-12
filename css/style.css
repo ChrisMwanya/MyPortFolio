@@ -71,11 +71,12 @@ li {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("../../img/fond.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url("../../img/informatique.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  animation: bg-pan-br 10s both infinite;
 }
 .header__title {
   text-transform: uppercase !important;
@@ -532,7 +533,7 @@ li {
 }
 
 .footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../../img/fond.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("../../img/informatique.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

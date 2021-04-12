@@ -6,7 +6,7 @@ window.onload = () => {
     const names = document.getElementById('names');
     const fonction = document.getElementById('fonction')
 
-    fetch("https://my-json-server.typicode.com/ChrisMwanya/MyPortFolio/identity").then(function (response) {
+    fetch("http://localhost:3000/identity").then(function (response) {
         
         return response.json();
     }).then(function (data){        
@@ -25,7 +25,7 @@ window.onload = () => {
     const nextLine = document.createElement('br');
     const biography = document.createElement('p');
 
-    fetch("https://my-json-server.typicode.com/ChrisMwanya/MyPortFolio/about").then(function (response) {
+    fetch("http://localhost:3000/about").then(function (response) {
         
         return response.json();
     }).then(function (data){   
