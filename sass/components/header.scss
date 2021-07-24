@@ -28,7 +28,7 @@
   &__title-container {
     @include flex-set(column, space-between, center);
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
-      url('../../img/informatique.jpg');
+      url('../../img/fond.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
